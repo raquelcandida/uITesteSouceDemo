@@ -4,7 +4,7 @@ module.exports = {
         url:["https://www.businessinsider.com/"]
       },
       assert:{
-        'categories:accessibility': ['error', {'minScore': 85}]
+        'categories.accessibility': ["error", {minScore: 0.85}]
       },
       upload: {
         target: 'temporary-public-storage',
