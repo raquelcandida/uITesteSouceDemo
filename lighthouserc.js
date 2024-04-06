@@ -3,8 +3,10 @@ module.exports = {
       collect:{
         url:["https://www.businessinsider.com/"]
       },
-      assert:{
-        'categories.accessibility': ["error", {minScore: 0.85}]
+      assert: {
+        assertions: {
+          'categories:accessibility': ['error', { 'minScore': 0.85 }]
+        }
       },
       upload: {
         target: 'temporary-public-storage',
